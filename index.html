@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahaa Housing Business</title>
+    <link rel="icon" href="img13.jpg">
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-title">
+        <img src="img13.jpg" alt="Rahaa Housing Logo" class="logo" />
+        <h1 style="color: white">House Of Rahaa</h1>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        <a href="About.html">About</a>
+      </nav>
+      <!-- 3-dot/hamburger menu icon -->
+  <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+    </header>
+    
+ <!-- Hero Section Home -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>Welcome to House Of Rahaa</h2>
+        <p>
+          ISO 9001:2015 certified real estate developer, serving Chennai and
+          beyond for 14+ years with professionalism and transparency.
+        </p>
+        <button class="btnGet" onclick="showContactForm()">Get in Touch</button>
+      </div>
+    </section>
+
+    <!-- Contact Form Popup -->
+    <div id="contactFormContainer">
+      <form id="getInTouchForm" onsubmit="return submitContactForm(event)">
+        <h3 style="color: #c7162b; margin-bottom: 20px">Order/Enquiry Form</h3>
+        <label>Name:</label><br />
+        <input type="text" name="name" required /><br />
+        <label>Email:</label><br />
+        <input type="email" name="email" required /><br />
+        <label>Phone:</label><br />
+        <input type="tel" name="phone" required /><br />
+        <label>Your Order/Message:</label><br />
+        <textarea name="order" required></textarea><br /><br />
+        <button type="submit" style="background: #c7162b; color: white">
+          Submit
+        </button>
+        <button type="button" onclick="closeContactForm()">Close</button>
+      </form>
+      <div id="confirmationMessage">
+        Thank you! Your order/enquiry has been submitted.
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      &copy; 2025 House Of Rahaa. All rights reserved.
+    </footer>
+
+    <script>
+      function showContactForm() {
+        document.getElementById("contactFormContainer").style.display = "block";
+        document.getElementById("getInTouchForm").style.display = "block";
+        document.getElementById("confirmationMessage").style.display = "none";
+      }
+      function closeContactForm() {
+        document.getElementById("contactFormContainer").style.display = "none";
+        document.getElementById("confirmationMessage").style.display = "none";
+        document.getElementById("getInTouchForm").style.display = "block";
+      }
+      function submitContactForm(e) {
+        e.preventDefault();
+        document.getElementById("getInTouchForm").style.display = "none";
+        document.getElementById("confirmationMessage").style.display = "block";
+        return false;
+      }
+    </script>
+    <script>
+  function toggleMenu() {
+    var nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
+  </body>
+</html>
+<style>
+      body {
+        background-image: url("./img11.jpg");
+        background-color: black;
+        color: white;
+      }
+      header {
+  background-color: #0047ab; /* Royal Blue */
+}
+
+footer {
+  background-color: #800000; /* Maroon */
+}
+      .navbar { background-color: #0059b3; }
+.footer { background-color: #8b0000; }
+      /* Header (top black bar) */
+header {
+  background-color: #1a1a1a; /* Current black color */
+  background: linear-gradient(90deg, #002b80, #0059b3); /* Add gradient blue shades */
+  padding: 10px 0;
+}
+.footer-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #111;         /* Or your footer color */
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    z-index: 99;
+}
+
+/* Footer (bottom black bar) */
+footer {
+  
+  background-color: #1a1a1a;
+  background: linear-gradient(90deg, #4b0000, #800000); /* Red gradient example */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+      .btnGet {
+        background: #c7162b;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 12px;
+      }
+      .btnGet:hover {
+        background: #b01222;
+      }
+      #contactFormContainer {
+        display: none;
+        background: #fff;
+        color: #222;
+        padding: 24px;
+        border-radius: 10px;
+        width: 350px;
+        position: fixed;
+        top: 20%;
+        left: 36%;
+        box-shadow: 0 6px 32px #0007;
+        z-index: 999;
+      }
+      #confirmationMessage {
+        display: none;
+        color: green;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      header {
+        padding: 20px;
+        background: #111;
+      }
+      nav {
+        float: right;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 12px;
+      }
+      .hero {
+        text-align: center;
+        margin: 40px 0;
+      }
+      .footer {
+        background: #111;
+        padding: 20px;
+        border-top: 1px solid #333;
+        text-align: center;
+      }
+      input,
+      textarea {
+        width: 90%;
+        margin: 6px 0 12px 0;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    </style>
+
+

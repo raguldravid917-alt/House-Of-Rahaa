@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* ----- Global page (override inline black) ----- */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.menu-icon {
+  width: 32px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 16px;
+  display: none; /* Hide on desktop, show on small screens */
+}
+.menu-icon span {
+  display: block;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* Responsive: On small screens show the icon, hide navLinks */
+@media (max-width: 760px) {
+  .menu-icon {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    right: 18px;
+    top: 54px;
+    width: 170px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0005;
+    padding: 14px 0;
+    z-index: 50;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+}
+
+/* Use !important to override inline body style in your HTML */
+body {
+ background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 50%, #0ea5a4 100%) !important;
+ 
+  color: #ffffff;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+   
+
+}
+
+/* ----- Header (top bar) ----- */
+.header {
+  /* make header thinner and colored */
+  background: linear-gradient(90deg, rgba(2,6,23,0.95), rgba(7,89,133,0.95));
+  padding: 12px 20px;       /* reduce height by lowering padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+/* Logo and title */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header .logo {
+  height: 44px;   /* adjust logo size to fit smaller header */
+  width: auto;
+  border-radius: 6px;
+}
+
+/* Nav links on header */
+.nav-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.nav-links a {
+  color: #ffd9b3;          /* visible link color */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.nav-links a:hover {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+}
+
+/* ----- Hero (center content) ----- */
+.hero {
+  /* keep content readable on top of colored background */
+  text-align: center;
+  padding: 90px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Make hero text stand out */
+.hero h2 {
+  font-size: 2.4rem;
+  margin: 0 0 10px;
+  letter-spacing: 0.6px;
+}
+.hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  opacity: 0.95;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Button style */
+.btnGet {
+  background: #f97316;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 18px;
+  font-weight: 700;
+}
+.btnGet:hover { transform: translateY(-2px); }
+
+/* ----- Contact popup (keep white to contrast) ----- */
+#contactFormContainer {
+  display: none;
+  background: #ffffff;
+  color: #222;
+  padding: 22px;
+  border-radius: 10px;
+  width: 360px;
+  max-width: calc(100% - 40px);
+  position: fixed;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 40px rgba(2,6,23,0.6);
+  z-index: 999;
+}
+
+/* ----- Footer (bottom bar) ----- */
+.footer-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #111;         /* Or your footer color */
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    z-index: 99;
+}
+
+/* ----- Small screens ----- */
+@media (max-width: 720px) {
+  .nav-links { display: none; } /* hide nav on small screens if you use mobile menu */
+  .hero { padding: 60px 16px; }
+  .header { padding: 10px 12px; }
+  #contactFormContainer { left: 50%; top: 14%; }
+}
