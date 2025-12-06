@@ -1,192 +1,100 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Rahaa Housing - Product Gallery</title>
-<link rel="icon" href="img13.jpg">
-<link rel="stylesheet" href="style.css">
-<style>
-  body {background-color: black; color: white; font-family: Arial, sans-serif;}
-  .gallery {display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;}
-  .product {background: #222; border-radius: 5px; padding: 10px; width: 200px; text-align: center;}
-  .hidden {display: none;}
-  button {margin: 5px; padding: 10px;}
-</style>
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);
-  color: #222;
-}
-header {
-  background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
-  padding: 28px 0 18px 0;
-  text-align: center;
-  color: #fff;
-  box-shadow: 0 2px 16px #ee4c8a22;
-}
-nav {
-  margin: 20px 0 0 0;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 18px;
-  font-weight: bold;
-  border-radius: 7px;
-  padding: 7px 12px;
-  letter-spacing: 1px;
-  font-size: 1.14em;
-  transition: background 0.2s, color 0.2s;
-}
-nav a:hover {
-  background: #fff3e0;
-  color: #f857a6;
-}
-.gallery-title {
-  text-align: center;
-  font-size: 2.1em;
-  color: #f857a6;
-  font-weight: bold;
-  margin-top: 32px;
-  letter-spacing: 1.2px;
-  margin-bottom: 25px;
-  text-shadow: 0 2px 8px #fbc2eb40;
-}
-.gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
-  padding: 20px 6vw 40px 6vw;
-}
-.gallery-card {
-  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
-  border-radius: 18px;
-  box-shadow: 0 2px 22px #a6c1ee60;
-  overflow: hidden;
-  padding: 12px;
-  transition: transform 0.18s, box-shadow 0.18s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 270px;
-  min-height: 300px;
-  position: relative;
-}
-.gallery-card:hover {
-  transform: scale(1.05) translateY(-8px);
-  box-shadow: 0 12px 32px #f857a688;
-  background: linear-gradient(135deg, #a6c1ee 0%, #fbc2eb 100%);
-}
-.gallery-image {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 12px #f857a670;
-  background: #fff;
-}
-.gallery-caption {
-  text-align: center;
-  color: #f857a6;
-  font-size: 1.13em;
-  font-weight: bold;
-  margin-top: 4px;
-  margin-bottom: 2px;
-}
-.gallery-desc {
-  color: #222;
-  font-size: 1em;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  line-height: 1.4;
-}
-footer {
-  background: linear-gradient(90deg, #ff5858 0%, #f857a6 100%);
-  color: #fff;
-  text-align: center;
-  padding: 26px 0 18px 0;
-  font-size: 1.07em;
-  margin-top: 32px;
-  border-radius: 40px 40px 0 0;
-  box-shadow: 0 -3px 22px #fcc27970;
-}
-@media (max-width:800px) {
-  .gallery-container { gap: 16px; }
-  .gallery-card { width: 90vw; min-height: 220px; }
-  .gallery-image { height: 40vw; }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Of Rahaa - Project Gallery</title>
+  <link rel="icon" href="img13.jpg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header">
-    <div class="logo-title">
-      <img src="img13.jpg" alt="Rahaa Housing Logo" class="logo">
-      <h1 style="color:white;">House Of Rahaa</h1>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo-title">
+        <img src="img13.jpg" alt="Rahaa Housing Logo" class="logo" />
+        <div class="site-name">House Of Rahaa</div>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        <a href="About.html">About</a>
+      </nav>
+
+      <div class="menu-icon" id="menuIcon">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="Services.html">Services</a>
-      <a href="Gallery.html">Gallery</a>
-      <a href="Contact.html">Contact</a>
-      <a href="About.html">About</a>
-    </nav>
   </header>
-  <h1 style="color: rgb(120, 107, 244); text-align:center;">House Of Rahaa - Product Gallery</h1>
 
-</div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Gallery</div>
+          <h1 class="section-title">A quick look at our layouts</h1>
+          <p class="section-subtitle">
+            Sample visuals representing the kind of developments, roads and ambience
+            our projects maintain. Replace images with your actual site photos.
+          </p>
+        </div>
 
-  <div class="gallery-container" id="product-gallery">
-  <div class="gallery-card" data-category="traditional">
-    <img src="img3.jpg" alt="Fashion Look 1" class="gallery-image">
-    <div class="gallery-caption">Silk Saree Collection</div>
-    <div class="gallery-desc">Handcrafted silk sarees with exquisite embroidery, perfect for festive occasions.</div>
-  </div>
-  <div class="gallery-card" data-category="traditional">
-    <img src="img2.jpg" alt="Boutique Dress" class="gallery-image">
-    <div class="gallery-caption">Designer Evening Dress</div>
-    <div class="gallery-desc">Custom-designed evening dresses for formal events and parties. Available in all sizes.</div>
-  </div>
-  <div class="gallery-card" data-category="traditional">
-    <img src="img5.jpg" alt="Boutique Dress" class="gallery-image">
-    <div class="gallery-caption">Sunset Aura</div>
-    <div class="gallery-desc">Custom-designed evening dresses for formal events and parties. Available in all sizes.</div>
-  </div>
-  <div class="gallery-card" data-category="modern">
-    <img src="img4.jpg" alt="Boutique Dress" class="gallery-image">
-    <div class="gallery-caption">Scarlet Dreamscape</div>
-    <div class="gallery-desc">Custom-designed evening dresses for formal events and parties. Available in all sizes.</div>
-  </div>
-  <div class="gallery-card" data-category="modern">
-    <img src="img6.jpg" alt="Boutique Dress" class="gallery-image">
-    <div class="gallery-caption">Golden Hour Luxe</div>
-    <div class="gallery-desc">Custom-designed evening dresses for formal events and parties. Available in all sizes.</div>
-  </div>
-  <div class="gallery-card" data-category="modern">
-    <img src="img7.jpg" alt="Boutique Dress" class="gallery-image">
-    <div class="gallery-caption">Royal Silk Muse</div>
-    <div class="gallery-desc">Custom-designed evening dresses for formal events and parties. Available in all sizes.</div>
-  </div>
-  <div class="gallery-card" data-category="modern">
-    <img src="img8.jpg" alt="Boutique Dress" class="gallery-image">
-    <div class="gallery-caption">Ethereal Blossom</div>
-    <div class="gallery-desc">Custom-designed evening dresses for formal events and parties. Available in all sizes.</div>
-  </div>
-  <div class="gallery-card" data-category="modern">
-    <img src="img9.jpg" alt="Boutique Dress" class="gallery-image">
-    <div class="gallery-caption">Crimson Elegance</div>
-    <div class="gallery-desc">Custom-designed evening dresses for formal events and parties. Available in all sizes.</div>
-  </div>
-  
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img src="img1.jpg" alt="Gated community entrance" />
+            <h3>Gated Community Entrance</h3>
+            <p>Grand arch, security cabin and avenue trees for a warm welcome.</p>
+          </article>
 
-</div>
+          <article class="gallery-card">
+            <img src="img2.jpg" alt="Wide blacktop roads" />
+            <h3>Wide Black-Top Roads</h3>
+            <p>Well-laid internal roads with street lighting and drainage.</p>
+          </article>
 
+          <article class="gallery-card">
+            <img src="img3.jpg" alt="Park and kids play area" />
+            <h3>Park &amp; Kids Play Area</h3>
+            <p>Clean, green common spaces for families to relax.</p>
+          </article>
 
+          <article class="gallery-card">
+            <img src="img4.jpg" alt="Residential plots" />
+            <h3>Ready-to-Build Plots</h3>
+            <p>Clearly marked plots with boundary stones and plot numbers.</p>
+          </article>
 
+          <article class="gallery-card">
+            <img src="img5.jpg" alt="Township night view" />
+            <h3>Township Night View</h3>
+            <p>Well-lit streets and peaceful neighbourhood environment.</p>
+          </article>
+
+          <article class="gallery-card">
+            <img src="img6.jpg" alt="Registration moments" />
+            <h3>Happy Registration Moments</h3>
+            <p>Families taking the first step towards their dream home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      © <span>House Of Rahaa</span> – Project Gallery.
+    </div>
+  </footer>
+
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    const menuIcon = document.getElementById("menuIcon");
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      menuIcon.classList.toggle("open");
+    });
+  </script>
 </body>
 </html>
