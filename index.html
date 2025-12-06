@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rahaa Housing Business</title>
-    <link rel="icon" href="img13.jpg">
-    <link rel="stylesheet" href="style.css"> 
-  </head>
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Of Rahaa - Premium Layout Developers</title>
+  <link rel="icon" href="img13.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
       <div class="logo-title">
         <img src="img13.jpg" alt="Rahaa Housing Logo" class="logo" />
-        <h1 style="color: white">House Of Rahaa</h1>
+        <div class="site-name">House Of Rahaa</div>
       </div>
+
       <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="Services.html">Services</a>
@@ -20,183 +23,178 @@
         <a href="Contact.html">Contact</a>
         <a href="About.html">About</a>
       </nav>
-      <!-- 3-dot/hamburger menu icon -->
-  <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-    </header>
-    
- <!-- Hero Section Home -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h2>Welcome to House Of Rahaa</h2>
-        <p>
-          ISO 9001:2015 certified real estate developer, serving Chennai and
-          beyond for 14+ years with professionalism and transparency.
-        </p>
-        <button class="btnGet" onclick="showContactForm()">Get in Touch</button>
+
+      <div class="menu-icon" id="menuIcon">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="hero-badge">
+            <span>ISO 9001:2015</span>
+            <span>Trusted Layout Developer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Premium residential <span>plots &amp; townships</span> across Chennai.
+          </h1>
+
+          <p class="hero-text">
+            Rahaa House has delivered 25,000+ plots through 10+ townships and 100+ layouts.
+            Transparent documentation, on-time handover and customer-first service.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="showContactForm()">
+              Get a free site visit
+            </button>
+            <a href="Services.html" class="btn-ghost">View all services</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>14+ yrs</strong>
+              <span>Industry experience</span>
+            </div>
+            <div class="hero-stat">
+              <strong>25k+</strong>
+              <span>Happy plot owners</span>
+            </div>
+            <div class="hero-stat">
+              <strong>100+</strong>
+              <span>Approved layouts</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3>Why families prefer Rahaa?</h3>
+          <p>
+            CMDA / DTCP approved layouts, bank loan assistance, clear title documents,
+            and gated communities in fast-growing corridors of Chennai.
+          </p>
+          <div class="hero-pill">
+            <span>✅</span>
+            <span>Customer-first guidance from site selection to registration</span>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <!-- Contact Form Popup -->
-    <div id="contactFormContainer">
-      <form id="getInTouchForm" onsubmit="return submitContactForm(event)">
-        <h3 style="color: #c7162b; margin-bottom: 20px">Order/Enquiry Form</h3>
-        <label>Name:</label><br />
-        <input type="text" name="name" required /><br />
-        <label>Email:</label><br />
-        <input type="email" name="email" required /><br />
-        <label>Phone:</label><br />
-        <input type="tel" name="phone" required /><br />
-        <label>Your Order/Message:</label><br />
-        <textarea name="order" required></textarea><br /><br />
-        <button type="submit" style="background: #c7162b; color: white">
-          Submit
-        </button>
-        <button type="button" onclick="closeContactForm()">Close</button>
-      </form>
-      <div id="confirmationMessage">
-        Thank you! Your order/enquiry has been submitted.
+    <!-- Services preview section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">What we do</div>
+          <h2 class="section-title">End-to-end layout &amp; property solutions</h2>
+          <p class="section-subtitle">
+            From raw land to ready-to-build plots, our in-house team manages approvals,
+            layout design, marketing and registration.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-tag">CMDA / DTCP</div>
+            <h3>Approved Layout Promotion</h3>
+            <p>
+              Concept to completion layout design with wide roads, parks and civic
+              amenities planned for livable communities.
+            </p>
+            <div class="service-meta">Ideal for investors &amp; first-time buyers</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-tag">Advisory</div>
+            <h3>Property Consulting</h3>
+            <p>
+              Guidance on location, budget, legal checks and long-term appreciation
+              to help you pick the right plot.
+            </p>
+            <div class="service-meta">Zero-pressure, transparent guidance</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-tag">On-ground</div>
+            <h3>Site Visit &amp; Registration</h3>
+            <p>
+              Free pick-up for site visits, documentation support and coordination
+              with banks &amp; registrars.
+            </p>
+            <div class="service-meta">Smooth experience till key hand-over</div>
+          </article>
+        </div>
       </div>
+    </section>
+  </main>
+
+  <!-- Contact popup (home) -->
+  <div id="contactFormContainer">
+    <div class="contact-overlay" onclick="closeContactForm()"></div>
+    <div class="contact-popup">
+      <div class="popup-close" onclick="closeContactForm()">✕ Close</div>
+      <h3>Book a free site visit</h3>
+      <p style="font-size:0.85rem; color:#9ca3af; margin-bottom:0.7rem;">
+        Leave your details. Our team will call within 24 hours.
+      </p>
+      <form id="getInTouchForm" onsubmit="return submitContactForm(event)">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="phone">Mobile</label>
+        <input id="phone" name="phone" type="tel" required />
+
+        <label for="location">Preferred location</label>
+        <input id="location" name="location" type="text" placeholder="e.g., Poonamallee, Sriperumbudur" />
+
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg" rows="3"></textarea>
+
+        <button class="btn-primary" style="width:100%; margin-top:0.3rem;">
+          Submit request
+        </button>
+      </form>
     </div>
+  </div>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-      &copy; 2025 House Of Rahaa. All rights reserved.
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      © <span>House Of Rahaa</span> – Chennai based layout developers. All rights reserved.
+    </div>
+  </footer>
 
-    <script>
-      function showContactForm() {
-        document.getElementById("contactFormContainer").style.display = "block";
-        document.getElementById("getInTouchForm").style.display = "block";
-        document.getElementById("confirmationMessage").style.display = "none";
-      }
-      function closeContactForm() {
-        document.getElementById("contactFormContainer").style.display = "none";
-        document.getElementById("confirmationMessage").style.display = "none";
-        document.getElementById("getInTouchForm").style.display = "block";
-      }
-      function submitContactForm(e) {
-        e.preventDefault();
-        document.getElementById("getInTouchForm").style.display = "none";
-        document.getElementById("confirmationMessage").style.display = "block";
-        return false;
-      }
-    </script>
-    <script>
-  function toggleMenu() {
-    var nav = document.getElementById('navLinks');
-    nav.classList.toggle('active');
-  }
-</script>
-  </body>
+  <script>
+    // mobile menu
+    const navLinks = document.getElementById("navLinks");
+    const menuIcon = document.getElementById("menuIcon");
+
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      menuIcon.classList.toggle("open");
+    });
+
+    // contact popup
+    function showContactForm() {
+      document.getElementById("contactFormContainer").style.display = "flex";
+    }
+
+    function closeContactForm() {
+      document.getElementById("contactFormContainer").style.display = "none";
+    }
+
+    function submitContactForm(e) {
+      e.preventDefault();
+      alert("Thank you! Our team will contact you shortly.");
+      closeContactForm();
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
 </html>
-<style>
-      body {
-        background-image: url("./img11.jpg");
-        background-color: black;
-        color: white;
-      }
-      header {
-  background-color: #0047ab; /* Royal Blue */
-}
-
-footer {
-  background-color: #800000; /* Maroon */
-}
-      .navbar { background-color: #0059b3; }
-.footer { background-color: #8b0000; }
-      /* Header (top black bar) */
-header {
-  background-color: #1a1a1a; /* Current black color */
-  background: linear-gradient(90deg, #002b80, #0059b3); /* Add gradient blue shades */
-  padding: 10px 0;
-}
-.footer-bar {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: #111;         /* Or your footer color */
-    color: #fff;
-    text-align: center;
-    padding: 12px 0;
-    z-index: 99;
-}
-
-/* Footer (bottom black bar) */
-footer {
-  
-  background-color: #1a1a1a;
-  background: linear-gradient(90deg, #4b0000, #800000); /* Red gradient example */
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-}
-      .btnGet {
-        background: #c7162b;
-        color: #fff;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 6px;
-        font-size: 1em;
-        cursor: pointer;
-        margin-top: 12px;
-      }
-      .btnGet:hover {
-        background: #b01222;
-      }
-      #contactFormContainer {
-        display: none;
-        background: #fff;
-        color: #222;
-        padding: 24px;
-        border-radius: 10px;
-        width: 350px;
-        position: fixed;
-        top: 20%;
-        left: 36%;
-        box-shadow: 0 6px 32px #0007;
-        z-index: 999;
-      }
-      #confirmationMessage {
-        display: none;
-        color: green;
-        margin-top: 20px;
-        font-weight: bold;
-      }
-      header {
-        padding: 20px;
-        background: #111;
-      }
-      nav {
-        float: right;
-      }
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 12px;
-      }
-      .hero {
-        text-align: center;
-        margin: 40px 0;
-      }
-      .footer {
-        background: #111;
-        padding: 20px;
-        border-top: 1px solid #333;
-        text-align: center;
-      }
-      input,
-      textarea {
-        width: 90%;
-        margin: 6px 0 12px 0;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-    </style>
-
-
