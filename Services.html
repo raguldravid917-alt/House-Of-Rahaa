@@ -1,204 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shashru Fashion – Services</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img13.jpg">
-  <style>
-    body {
-      margin:0; padding:0;
-      font-family: 'Segoe UI', Roboto, 'Arial', sans-serif;
-      background: linear-gradient(120deg, #fff6f6 0%, #ffe3c0 100%);
-      color:#181818;
-    }
-    .header {
-      background: linear-gradient(90deg, #c7162b 40%, #f7af43 100%);
-      padding:24px 0;
-      text-align:center;
-      color:#fff;
-      box-shadow:0 2px 16px #c7162b22;
-      margin-bottom:0px;
-    }
-    nav {
-      margin:16px 0;
-    }
-    nav a {
-      color:#fff; text-decoration:none;
-      margin:0 18px;
-      font-weight:bold;
-      letter-spacing: 1px;
-      font-size:1.12em;
-      transition: color 0.2s;
-    }
-    nav a:hover {
-      color: #ffe3c0;
-    }
-    .services-container {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-      gap:32px;
-      padding:44px 30px;
-    }
-    .service-card {
-      background:linear-gradient(110deg,#fafcff 90%,#f7d7dc 100%);
-      border-radius:16px;
-      box-shadow:0 3px 24px #c7162b18;
-      padding:32px 20px 28px 20px;
-      display:flex; flex-direction:column; align-items:flex-start;
-      transition: transform 0.18s, box-shadow 0.18s;
-      border:2px solid #f7af43;
-      position:relative;
-    }
-    .service-card:hover {
-      transform:translateY(-10px) scale(1.03);
-      box-shadow:0 7px 45px #f7af4360;
-      background:linear-gradient(120deg,#ffe3c0 80%,#fafcff 100%);
-      border-color:#c7162b;
-    }
-    .service-title {
-      font-size:1.35em;
-      color:#c7162b;
-      margin-bottom:12px;
-      font-weight:bold;
-    }
-    .service-text {
-      font-size:1.09em;
-      color:#181818;
-      margin-bottom:10px;
-    }
-    .quick-contact {
-      position:fixed;
-      right:22px;
-      bottom:22px;
-      background:radial-gradient(circle,#c7162b 60%,#f7af43 140%);
-      color:#fff;
-      border:none; border-radius:40px; padding:18px 26px;
-      font-size:1.15em; font-weight:bold; cursor:pointer;
-      box-shadow:0 4px 22px #c7162b55;
-      z-index:500;
-      transition: background 0.23s;
-      animation: pulse 2s infinite;
-    }
-    .quick-contact:hover {
-      background:radial-gradient(circle,#f7af43 70%,#c7162b 150%);
-      color:#c7162b;
-    }
-    @keyframes pulse {
-      0% { box-shadow:0 0 15px #f7af4340;}
-      50% { box-shadow:0 0 40px #c7162b55;}
-      100% { box-shadow:0 0 15px #f7af4340;}
-    }
-    .footer {
-      background:#c7162b;
-      color:#fff;
-      text-align:center;
-      padding:24px 0;
-      font-size:1em;
-      margin-top:32px;
-      letter-spacing: 0.7px;
-    }
-    @media (max-width:700px) {
-      .services-container{
-        padding:28px 7px;
-        grid-template-columns:1fr;
-      }
-      .service-card{
-        padding:22px 10px 18px 10px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Of Rahaa - Services</title>
+  <link rel="icon" href="img13.jpg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="header">
-    <h1>House of Rahaa Fashion – Our Services</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="Services.html">Services</a>
-      <a href="Gallery.html">Gallery</a>
-      <a href="About.html">About</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
-  </div>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo-title">
+        <img src="img13.jpg" alt="Rahaa Housing Logo" class="logo" />
+        <div class="site-name">House Of Rahaa</div>
+      </div>
 
-  <div class="services-container">
-    <div class="service-card">
-      <div class="service-title">Pattern Making & Design</div>
-      <div class="service-text">
-        Bespoke pattern creation and innovative design solutions for apparel, tailored to the latest trends and individual needs.
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        <a href="About.html">About</a>
+      </nav>
+
+      <div class="menu-icon" id="menuIcon">
+        <span></span><span></span><span></span>
       </div>
     </div>
+  </header>
 
-    <div class="service-card">
-      <div class="service-title">Custom Tailoring</div>
-      <div class="service-text">
-        Personalised measurements, expert stitching, and quality finishing for garments that flatter your style and fit perfectly.
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Services</div>
+          <h1 class="section-title">How we help you own the right plot</h1>
+          <p class="section-subtitle">
+            From identifying the right corridor to registration, our team works with
+            you at every step with clear documentation and honest advice.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-tag">Planning</div>
+            <h3>Land Acquisition &amp; Feasibility</h3>
+            <p>
+              Detailed due-diligence on title, approvals, connectivity and growth
+              potential before a project is launched.
+            </p>
+            <div class="service-meta">Backed by 14+ years of local expertise</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-tag">Design</div>
+            <h3>Township &amp; Layout Design</h3>
+            <p>
+              Thoughtful plotting with wide black-top roads, park spaces, street
+              lights and proper drainage planning.
+            </p>
+            <div class="service-meta">For safe &amp; livable communities</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-tag">Sales</div>
+            <h3>Transparent Plot Booking</h3>
+            <p>
+              Clear price breakup, payment schedule and block-plan explanation.
+              No hidden charges or surprise clauses.
+            </p>
+            <div class="service-meta">100% transparency policy</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-tag">Support</div>
+            <h3>Bank Loan Coordination</h3>
+            <p>
+              Assistance with leading banks and NBFCs for housing loans, document
+              sharing and valuation support.
+            </p>
+            <div class="service-meta">Faster approvals, less running around</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-tag">Legal</div>
+            <h3>Documentation &amp; Registration</h3>
+            <p>
+              Guidance on EC, parent documents, patta transfer and registration
+              at the sub-registrar office.
+            </p>
+            <div class="service-meta">End-to-end legal clarity</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-tag">After-sales</div>
+            <h3>Post-Purchase Support</h3>
+            <p>
+              Help with fencing, basic maintenance and resale guidance whenever
+              you plan to liquidate your investment.
+            </p>
+            <div class="service-meta">Relationship beyond registration</div>
+          </article>
+        </div>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="service-card">
-      <div class="service-title">Fashion Consultation</div>
-      <div class="service-text">
-        Style guidance for special occasions, wardrobe updates, and trend adoption—curated by top fashion professionals.
-      </div>
+  <footer>
+    <div class="container footer-inner">
+      © <span>House Of Rahaa</span> – Services.
     </div>
+  </footer>
 
-    <div class="service-card">
-      <div class="service-title">Boutique Collections</div>
-      <div class="service-text">
-        Exclusive ready-to-wear and custom-designed collections available for purchase direct from our studio or online.
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-title">Fabric Sourcing & Embellishment</div>
-      <div class="service-text">
-        Sustainable fabrics, exquisite embroidery, and premium embellishments for one-of-a-kind outfits.
-      </div>
-    </div>
-  </div>
-
-  <button class="quick-contact" onclick="showContactForm()">Get in Touch 💬</button>
-  <div id="contactFormContainer" style="display:none;">
-    <form id="getInTouchForm" onsubmit="return submitContactForm(event)" style="background:#fff; color:#222; padding:24px; border-radius:14px; box-shadow:0 6px 32px #c7162b70; position:fixed; top:18%; left:50%; transform:translate(-50%,0); min-width:320px; max-width:380px; z-index:1000;">
-      <h3 style="color:#c7162b; margin-bottom:22px;">Fashion Enquiry / Order</h3>
-      <label>Name:</label><br>
-      <input type="text" name="name" required><br>
-      <label>Email:</label><br>
-      <input type="email" name="email" required><br>
-      <label>Phone:</label><br>
-      <input type="tel" name="phone" required><br>
-      <label>Message / Requirements:</label><br>
-      <textarea name="order" required style="height:70px;"></textarea><br><br>
-      <button type="submit" style="background:#c7162b; color:white; border:none; border-radius:4px; padding:10px 18px;">Submit</button>
-      <button type="button" onclick="closeContactForm()" style="margin-left:12px; background:#f7af43; color:#fff; border:none; border-radius:4px; padding:10px 18px;">Close</button>
-    </form>
-    <div id="confirmationMessage" style="display:none; color:green; font-weight:bold; text-align:center; margin-top:18px;">
-      Thank you! Your fashion enquiry was submitted.
-    </div>
-  </div>
-
-  <div class="footer">
-      &copy; 2025 House Of Rahaa Fashion. All rights reserved.
-  </div>
   <script>
-    function showContactForm() {
-      document.getElementById('contactFormContainer').style.display = 'block';
-      document.getElementById('confirmationMessage').style.display = 'none';
-      document.getElementById('getInTouchForm').style.display = 'block';
-    }
-    function closeContactForm() {
-      document.getElementById('contactFormContainer').style.display = 'none';
-      document.getElementById('confirmationMessage').style.display = 'none';
-      document.getElementById('getInTouchForm').style.display = 'block';
-    }
-    function submitContactForm(e) {
-      e.preventDefault();
-      document.getElementById('getInTouchForm').style.display = 'none';
-      document.getElementById('confirmationMessage').style.display = 'block';
-      return false;
-    }
+    const navLinks = document.getElementById("navLinks");
+    const menuIcon = document.getElementById("menuIcon");
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      menuIcon.classList.toggle("open");
+    });
   </script>
 </body>
 </html>
