@@ -1,201 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About House Of Rahaa</title>
-
-  <style>
-    :root {
-      /* Main Theme Colors */
-      --primary-pink: #ee4266;
-      --secondary-purple: #7b2ff7;
-      --highlight-blue: #2193b0;
-      --light-gray: #f4f4f9;
-      --dark-gray: #2e2e3a;
-      --shadow-color: #b29cd9;
-
-      /* FIX: Missing Variables Defined */
-      --primary-color: #ee4266;
-      --secondary-color: #2193b0;
-      --card-gradient: linear-gradient(135deg, #ffffff, #e3f2fd);
-      --text-color: #1f2933;
-      --white: #ffffff;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0077b6, #00b4d8);
-      color: var(--white);
-      line-height: 1.7;
-    }
-
-    /* HEADER */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 7vw;
-      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      box-shadow: 0 2px 18px var(--shadow-color);
-    }
-
-    .logo-title {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid white;
-    }
-
-    .logo-title h1 {
-      margin: 0;
-      font-size: 1.6rem;
-    }
-
-    .nav-links a {
-      color: var(--white);
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      background: #eaf6fc;
-      color: var(--primary-color);
-    }
-
-    /* MAIN TITLE */
-    .page-title {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-top: 40px;
-      text-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
-      font-weight: bold;
-    }
-
-    /* CONTENT BOX */
-    .about-wrapper {
-      max-width: 960px;
-      margin: 35px auto;
-      background: rgba(255, 255, 255, 0.25);
-      padding: 28px 28px;
-      border-radius: 14px;
-      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(5px);
-    }
-
-    .about-wrapper p {
-      color: #ffffff;
-      font-size: 1.1rem;
-      margin-bottom: 15px;
-    }
-
-    /* FOOTER */
-    footer {
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-      color: var(--white);
-      text-align: center;
-      padding: 18px 0;
-      margin-top: 40px;
-      border-radius: 40px 40px 0 0;
-      box-shadow: 0 -3px 22px #8ab6e570;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .header {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-      }
-
-      .page-title {
-        font-size: 2rem;
-      }
-
-      .about-wrapper {
-        margin: 25px 12px;
-        padding: 18px 16px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Of Rahaa - Project Gallery</title>
+  <link rel="icon" href="img13.jpg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-  <!-- HEADER -->
   <header class="header">
-    <div class="logo-title">
-      <img src="logo.png" alt="Rahaa Logo" class="logo">
-      <h1>House Of Rahaa</h1>
-    </div>
+    <div class="container header-inner">
+      <div class="logo-title">
+        <img src="img13.jpg" alt="Rahaa Housing Logo" class="logo" />
+        <div class="site-name">House Of Rahaa</div>
+      </div>
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Gallery.html">Gallery</a>
-      <a href="About.html">About Us</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        <a href="About.html">About</a>
+      </nav>
+
+      <div class="menu-icon" id="menuIcon">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
   </header>
 
-  <!-- MAIN TITLE -->
-  <h1 class="page-title">About House Of Rahaa</h1>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Gallery</div>
+          <h1 class="section-title">A quick look at our layouts</h1>
+          <p class="section-subtitle">
+            Sample visuals representing the kind of developments, roads and ambience
+            our projects maintain. Replace images with your actual site photos.
+          </p>
+        </div>
 
-  <!-- MAIN CONTENT -->
-  <div class="about-wrapper">
-    <p>
-      Rahaa House (Rahaa Associates) is a Chennai-based, ISO 9001:2015 certified real estate developer,
-      specializing in land development, layout promotion, and property consulting.
-    </p>
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img src="img1.jpg" alt="Gated community entrance" />
+            <h3>Gated Community Entrance</h3>
+            <p>Grand arch, security cabin and avenue trees for a warm welcome.</p>
+          </article>
 
-    <p>
-      With over <strong>14 years</strong> of dedicated service in the industry, we pride ourselves on high standards
-      of <strong>transparency</strong>, <strong>integrity</strong>, and <strong>professionalism</strong>.
-    </p>
+          <article class="gallery-card">
+            <img src="img2.jpg" alt="Wide blacktop roads" />
+            <h3>Wide Black-Top Roads</h3>
+            <p>Well-laid internal roads with street lighting and drainage.</p>
+          </article>
 
-    <p>
-      Operating from our spacious office in Maduravoyal, Chennai, Rahaa House has successfully completed
-      more than <strong>110 residential townships</strong> and delivered over <strong>25,000 plots</strong> to satisfied customers.
-    </p>
+          <article class="gallery-card">
+            <img src="img3.jpg" alt="Park and kids play area" />
+            <h3>Park &amp; Kids Play Area</h3>
+            <p>Clean, green common spaces for families to relax.</p>
+          </article>
 
-    <p>
-      Our clientele includes government employees, business professionals, and NRIs across India.
-      Our commitment to delivering plots with clear titles, legal transparency, and top-quality service
-      has made us a trusted name in real estate.
-    </p>
+          <article class="gallery-card">
+            <img src="img4.jpg" alt="Residential plots" />
+            <h3>Ready-to-Build Plots</h3>
+            <p>Clearly marked plots with boundary stones and plot numbers.</p>
+          </article>
 
-    <p>
-      At Rahaa House, we are dedicated to helping you find your perfect property with
-      <strong>confidence</strong> and <strong>ease</strong>.
-    </p>
-  </div>
+          <article class="gallery-card">
+            <img src="img5.jpg" alt="Township night view" />
+            <h3>Township Night View</h3>
+            <p>Well-lit streets and peaceful neighbourhood environment.</p>
+          </article>
 
-  <!-- FOOTER -->
+          <article class="gallery-card">
+            <img src="img6.jpg" alt="Registration moments" />
+            <h3>Happy Registration Moments</h3>
+            <p>Families taking the first step towards their dream home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    © 2025 House Of Rahaa — All Rights Reserved
+    <div class="container footer-inner">
+      © <span>House Of Rahaa</span> – Project Gallery.
+    </div>
   </footer>
 
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    const menuIcon = document.getElementById("menuIcon");
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      menuIcon.classList.toggle("open");
+    });
+  </script>
 </body>
-
 </html>
